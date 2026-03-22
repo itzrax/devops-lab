@@ -10,7 +10,7 @@ pipeline {
     
     stage('Docker Build') {
       steps {
-        sh 'docker build -t devops-lab .'
+        sh 'sudo docker build -t devops-lab .'
       }
     }
     
