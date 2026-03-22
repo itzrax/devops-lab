@@ -8,9 +8,9 @@ pipeline {
       }
     }
     
-    stage('Test') {
+    stage('Docker Build') {
       steps {
-        echo 'Testing project...'
+        sh 'docker build -t devops-lab .'
       }
     }
     
